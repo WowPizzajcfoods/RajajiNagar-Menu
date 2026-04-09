@@ -20,12 +20,12 @@ export default function ImageWithLoading({
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <>
+    <div className="relative w-full h-full">
       {isLoading && (
-        <div className="flex items-center justify-center w-full h-full rounded">
-          <div className="relative inline-block w-12 h-12">
-            <div className="absolute w-12 h-12 rounded-full border-4 border-t-white border-r-transparent border-b-transparent border-l-transparent animate-spin"></div>
-            <div className="absolute w-12 h-12 rounded-full border-4 border-t-transparent border-r-transparent border-b-transparent border-l-[#ec2127] animate-[spin_0.5s_linear_infinite_reverse]"></div>
+        <div className="absolute inset-0 flex items-center justify-center rounded">
+          <div className="relative inline-flex w-1/2 h-1/2 max-w-12 max-h-12">
+            <div className="absolute inset-0 rounded-full border-4 border-t-white border-r-transparent border-b-transparent border-l-transparent animate-spin"></div>
+            <div className="absolute inset-0 rounded-full border-4 border-t-transparent border-r-transparent border-b-transparent border-l-[#ec2127] animate-[spin_0.5s_linear_infinite_reverse]"></div>
           </div>
         </div>
       )}
@@ -40,6 +40,6 @@ export default function ImageWithLoading({
         onLoad={() => setIsLoading(false)}
         style={{ opacity: isLoading ? 0 : 1, transition: "opacity 0.3s" }}
       />
-    </>
+    </div>
   );
 }
