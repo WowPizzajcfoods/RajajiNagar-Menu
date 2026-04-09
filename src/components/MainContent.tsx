@@ -167,9 +167,11 @@ const MainContent = () => {
             </div>
           </div>
         )}
-        <span className="text-center mt-2 font-semibold">
-     We’ll be right there once you’re ready to order!
-      </span>
+        {hasResults && (
+          <span className="text-center mt-2 font-semibold">
+            We’ll be right there once you’re ready to order!
+          </span>
+        )}
         <main
           className="flex flex-col gap-6 py-4"
           style={{ display: hasResults ? "flex" : "none" }}
