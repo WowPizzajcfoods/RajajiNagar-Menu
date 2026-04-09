@@ -9,7 +9,7 @@ export default function Header() {
         className="w-full h-30 relative flex  bg-[#db5b5b] overflow-hidden"
         aria-label="Home"
       >
-        <ImageWithLoading src={`/pizza4.png`} alt="Bakery header" />
+        <ImageWithLoading src={`/pizza5.png`} alt="Bakery header" />
       </Link>
     </div>
   );

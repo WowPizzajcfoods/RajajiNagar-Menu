@@ -121,15 +121,6 @@ const MainContent = () => {
               Beverages
             </span>
             <span
-              className={`cursor-pointer text-base font-semibold sm:text-lg md:text-xl transition-all pb-2 shrink-0 ${activeSection === "Add-Ons" ? "text-gray-800 font-bold border-b-2 border-gray-600" : "border-b-2 border-transparent font-normal"}`}
-              onClick={() => scrollToSection("Add-Ons")}
-              ref={activeSection === "Add-Ons" ? activeRef : null}
-
-            >
-              
-              Add Ons
-            </span>
-            <span
               className={`cursor-pointer text-base font-semibold sm:text-lg md:text-xl transition-all pb-2 shrink-0 ${activeSection === "Meal-Box" ? "text-gray-800 font-bold border-b-2 border-gray-600" : "border-b-2 border-transparent font-normal"}`}
               onClick={() => scrollToSection("Meal-Box")}
               ref={activeSection === "Meal-Box" ? activeRef : null}
@@ -138,6 +129,16 @@ const MainContent = () => {
             >
               Meal Box
             </span>
+            <span
+              className={`cursor-pointer text-base font-semibold sm:text-lg md:text-xl transition-all pb-2 shrink-0 ${activeSection === "Add-Ons" ? "text-gray-800 font-bold border-b-2 border-gray-600" : "border-b-2 border-transparent font-normal"}`}
+              onClick={() => scrollToSection("Add-Ons")}
+              ref={activeSection === "Add-Ons" ? activeRef : null}
+
+            >
+              
+              Add Ons
+            </span>
+            
           </div>
           <div className="flex items-center justify-start gap-2 w-full cursor-pointer self-end">
             <div className="flex items-center justify-between gap-4 w-full">
@@ -202,16 +203,17 @@ const MainContent = () => {
           </section>
           <section
             className="w-full scroll-mt-15 rounded-4xl overflow-hidden"
-            id="Add-Ons"
-          >
-            <AddOns items={filteredItems.addOns} />
-          </section>
-          <section
-            className="w-full scroll-mt-15 rounded-4xl overflow-hidden"
             id="Meal-Box"
           >
             <MealBox items={filteredItems.mealBox} />
           </section>
+          <section
+            className="w-full scroll-mt-15 rounded-4xl overflow-hidden"
+            id="Add-Ons"
+          >
+            <AddOns items={filteredItems.addOns} />
+          </section>
+          
         </main>
       </div>
       <ScrollFadeObserver />
