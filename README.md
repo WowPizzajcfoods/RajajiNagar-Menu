@@ -33,10 +33,9 @@ The goal of this app is to help customers:
 
 ## Tech Stack
 
-- Next.js (App Router)
+- Next.js
 - React + TypeScript
 - Tailwind CSS
-- Radix UI / shadcn components
 
 ## Getting Started
 

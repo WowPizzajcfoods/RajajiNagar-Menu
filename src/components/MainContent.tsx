@@ -86,7 +86,7 @@ const MainContent = () => {
   return (
     <>
       <div className="px-4 flex flex-col justify-center">
-        <nav className="flex flex-col items-cente gap-1 sticky top-0 z-2 bg-white py-2 ">
+        <nav className="flex flex-col items-cente gap-1 sticky top-0 z-2 bg-white pt-2 ">
           <div ref={navRef} className="flex-1 flex items-center gap-4 sm:gap-6 md:gap-8 py-2 overflow-x-auto ">
             <span
               className={`cursor-pointer text-base font-semibold sm:text-lg md:text-xl transition-all pb-2 shrink-0 ${activeSection === "Pizzas" ? "text-gray-800 font-bold border-b-2 border-gray-600" : "border-b-2 border-transparent font-normal"}`}
@@ -157,6 +157,13 @@ const MainContent = () => {
               </span>
             </div>
           </div>
+          <div className="text-center my-1">
+            {hasResults && (
+          <span className="text-center mt-2 font-semibold">
+            We’ll be right there once you’re ready to order!
+          </span>
+        )}
+          </div>
         </nav>
         {!hasResults && searchQuery !== "" && (
           <div className="flex justify-center items-center py-20">
@@ -167,13 +174,8 @@ const MainContent = () => {
             </div>
           </div>
         )}
-        {hasResults && (
-          <span className="text-center mt-2 font-semibold">
-            We’ll be right there once you’re ready to order!
-          </span>
-        )}
         <main
-          className="flex flex-col gap-6 py-4"
+          className="flex flex-col gap-6 py-2"
           style={{ display: hasResults ? "flex" : "none" }}
         >
           <section

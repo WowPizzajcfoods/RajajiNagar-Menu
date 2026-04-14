@@ -11,6 +11,22 @@ export const starterItems = normalizeMenuItems([
     price: 59,
   },
   {
+    name: "Cheese Garlic Bread",
+    desc: "Toasted garlic bread topped with melted cheese",
+    img: "/categories/starters/starter1.png",
+    isVeg: true,
+    isSpicy: false,
+    price: 89,
+  },
+  // {
+  //   name: "Cheese Garlic Bread with toppings",
+  //   desc: "Toppings: Chilly Onion, Corn, Jalapno, Chicken Tikka, Grill Chicken",
+  //   img: "/categories/starters/starter1.png",
+  //   isVeg: true,
+  //   isSpicy: false,
+  //   price: 89,
+  // },
+  {
     name: "French Fries",
     desc: "Crispy golden fries, the classic irresistible side",
     img: "/categories/starters/starter4.png",
@@ -26,14 +42,7 @@ export const starterItems = normalizeMenuItems([
     isSpicy: false,
     price: 69,
   },
-  {
-    name: "Cheese Garlic Bread",
-    desc: "Toasted garlic bread topped with melted cheese",
-    img: "/categories/starters/starter1.png",
-    isVeg: true,
-    isSpicy: false,
-    price: 89,
-  },
+  
   {
     name: "Peri Peri Fries",
     desc: "Spicy peri peri seasoned fries with a fiery kick.",
