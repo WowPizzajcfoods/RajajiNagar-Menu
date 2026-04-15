@@ -42,7 +42,7 @@ const MainContent = () => {
     if (!element) return;
 
     // Increase/decrease this value to control how far below the sticky nav sections land.
-    const topOffset = 120;
+    const topOffset = 150;
     const elementTop = element.getBoundingClientRect().top + window.scrollY;
 
     window.scrollTo({

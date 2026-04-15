@@ -32,9 +32,9 @@ const MenuItem = ({ item }: MenuItemProps) => {
           className="text-base md:text-lg font-semibold flex items-center gap-1"
           htmlFor="item"
         >
-          <div className="p-0.75 relative h-5 w-5 shrink-0">
+          {item.isVeg && (<div className="p-0.75 relative h-5 w-5 shrink-0">
             <ImageWithLoading alt={item.isVeg ? "veg" : "nonveg"} src={item.isVeg ? "/icons/veg.svg" : "/icons/nonveg.svg"} />
-          </div>
+          </div>)}
           <span className="truncate">{item.name}</span>
           {item.isSpicy && (
             <div className="p-1 relative h-5 w-5 shrink-0">
@@ -46,7 +46,7 @@ const MenuItem = ({ item }: MenuItemProps) => {
           {item.desc}
         </span>
       </div>
-      <span className="text-xl md:text-2xl font-bold text-gray-700 shrink-0">
+      <span className="text-xl md:text-2xl font-bold text-gray-800 shrink-0">
         {item.price ? `₹${item.price}` : `MRP`}
       </span>
     </div>

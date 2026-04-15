@@ -18,14 +18,14 @@ export const starterItems = normalizeMenuItems([
     isSpicy: false,
     price: 89,
   },
-  // {
-  //   name: "Cheese Garlic Bread with toppings",
-  //   desc: "Toppings: Chilly Onion, Corn, Jalapno, Chicken Tikka, Grill Chicken",
-  //   img: "/categories/starters/starter1.png",
-  //   isVeg: true,
-  //   isSpicy: false,
-  //   price: 89,
-  // },
+  {
+    name: "Garlic Bread with Toppings",
+    desc: "Chilly Onion, Corn, Jalapno, Chicken Tikka, Grilled Chicken, Spicy Peri Peri",
+    img: "/categories/starters/garlictoppings.png",
+    // isVeg: true,
+    isSpicy: false,
+    price: 99,
+  },
   {
     name: "French Fries",
     desc: "Crispy golden fries, the classic irresistible side",
