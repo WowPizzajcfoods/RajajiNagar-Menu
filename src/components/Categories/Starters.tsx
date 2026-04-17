@@ -19,14 +19,6 @@ export const starterItems = normalizeMenuItems([
     price: 89,
   },
   {
-    name: "Garlic Bread with Toppings",
-    desc: "Chilly Onion, Corn, Jalapno, Chicken Tikka, Grilled Chicken, Spicy Peri Peri",
-    img: "/categories/starters/garlictoppings.png",
-    // isVeg: true,
-    isSpicy: false,
-    price: 99,
-  },
-  {
     name: "French Fries",
     desc: "Crispy golden fries, the classic irresistible side",
     img: "/categories/starters/starter4.png",
@@ -42,7 +34,7 @@ export const starterItems = normalizeMenuItems([
     isSpicy: false,
     price: 69,
   },
-  
+
   {
     name: "Peri Peri Fries",
     desc: "Spicy peri peri seasoned fries with a fiery kick.",
@@ -74,6 +66,22 @@ export const starterItems = normalizeMenuItems([
     isVeg: true,
     isSpicy: false,
     price: 79,
+  },
+  {
+    name: "Garlic Bread + Toppings",
+    desc: "Chilly Onion, Corn, Jalapno",
+    img: "/categories/starters/garlictoppingsveg.png",
+    isVeg: true,
+    isSpicy: false,
+    price: 120,
+  },
+  {
+    name: "Garlic Bread + Toppings",
+    desc: "Chicken Tikka, Grilled Chicken, Spicy Peri Peri",
+    img: "/categories/starters/garlictoppingsnon.png",
+    isVeg: false,
+    isSpicy: false,
+    price: 130,
   },
   {
     name: "Chicken Fingers",
@@ -140,13 +148,11 @@ const Starters = ({ items }: StartersProps) => {
       <span className="text-3xl font-semibold bg-[#ed5a5a] text-white px-5 py-3 rounded-t-md">
         Starters
       </span>
-      {results.map(
-        (item) => (
-          <div className="px-4 pb-4 flex" key={`${item.name}-${item.img}`}>
-            <MenuItem item={item} />
-          </div>
-        ),
-      )}
+      {results.map((item) => (
+        <div className="px-4 pb-4 flex" key={`${item.name}-${item.img}`}>
+          <MenuItem item={item} />
+        </div>
+      ))}
     </div>
   );
 };
