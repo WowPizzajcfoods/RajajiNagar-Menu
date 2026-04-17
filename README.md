@@ -1,5 +1,7 @@
 # [Wow Pizza Menu🍕](https://wowpizzajcfoods.github.io/RajajiNagar-Menu/) 
 
+![Wow Pizza Menu](public/WowPizzaMenu.png)
+
 A fast, friendly digital menu where customers can explore food items before placing an order.
 
 This project is built to make browsing easy on mobile and desktop. Users can jump between categories, search for dishes instantly, and quickly decide what to order without any clutter.
